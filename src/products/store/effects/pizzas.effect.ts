@@ -21,5 +21,5 @@ export class PizzasEffects {
         map(pizzas => new pizzaActions.LoadPizzasSuccess(pizzas)),
         catchError(error => of(new pizzaActions.LoadPizzasFail(error)))
       )
-    }))
+    }));
 }
